@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffcccc; /* Light pink background */
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace; /* Typewriter-style font */
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #ff4d4d; /* Red button background */
+  color: #fff; /* White button text color */
+  border: none;
+  border-radius: 5px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace; /* Typewriter-style font */
+}
+
+/* Decorative elements */
+.popup::before {
+  content: '\2764'; /* Heart symbol */
+  font-size: 40px;
+  color: #ff4d4d;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup::after {
+  content: '\1F388'; /* Balloon symbol */
+  font-size: 40px;
+  color: #ff4d4d;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
